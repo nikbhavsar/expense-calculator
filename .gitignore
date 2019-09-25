@@ -1,0 +1,7 @@
+node_modules/
+id_rsa
+id_rsa.pub
+public/bundle.js
+public/bundle.js/map
+public/styles.css
+public/style.css.map
