@@ -9,6 +9,7 @@ import expenseByFilter from './selectors/expenses';
 import './styles/styles.scss';
 import AppRouter from './routers/AppRouter';
 import expenses from './reducers/expenses';
+import './firebase/firebase';
 
 const store = configureStore();
 
