@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import numeral from 'numeral';
+import {Link} from 'react-router-dom';
 import TotalNumberOfCount from '../selectors/expenses';
 import TotalAmountOfExpenses from '../selectors/total-expenses';
 
@@ -11,8 +12,15 @@ const ExpenseSummery = ({expenseCount, expenseTotal}) => {
    
 
     return (
-         <div>
-         <h1> You are viewing {expenseCount}  {expenseWord} of total {totalExpenseAmount} </h1>
+         <div className="page-header">
+         <div className="content-container">
+         <h1 className="page-header__title"> You are viewing <span> {expenseCount} </span> <span>  {expenseWord} </span> of total <span>{totalExpenseAmount} </span> </h1>
+         <div className="page-header__actions">
+         <Link className="box-layout__login-button" to="/create">
+         Add Expense
+         </Link>
+         </div>
+         </div>
          </div>  
     )    
     

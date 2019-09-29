@@ -1,0 +1,30 @@
+.box-layout{
+    background: url('/images/bg.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.box-layout__box{
+color: snow;
+background: fade-out($color: #563E1A, $amount: .90);
+border: seashell;
+border-width: 2px;
+border-radius: 3px;
+text-align: center;
+width:25rem;
+padding: $l-size $m-size;
+}
+
+.box-layout__title{
+    font-weight: 700;
+}
+
+.box-layout__sub-title{
+    font-weight: 400;
+    font-style: italic;
+}

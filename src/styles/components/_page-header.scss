@@ -1,0 +1,24 @@
+.page-header{
+    display: flex;
+    background: #f7f7f7;
+    margin-bottom: $l-size;
+    padding: $l-size 0;
+}
+
+.page-header__title{
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+
+    span{
+        font-weight: 700;
+    }
+}
+
+.page-header__actions{
+    margin-top: $l-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
